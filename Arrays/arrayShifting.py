@@ -2,7 +2,7 @@
 
 # Method #1
 
-arrayIn = [1, 2, 3, 4, 5, 6]  # arrayOut = [4, 5, 6, 1, 2, 3]
+arrayIn = [1, 2, 3, 4, 5, 6, 7]  # arrayOut = [4, 5, 6, 1, 2, 3]
 shift = 3
 
 arrayLength = len(arrayIn)
