@@ -12,8 +12,8 @@ There is no Pythagorean triplet.
 
 
 Trick:
-odd : 7 squre 49 : 49/2 24.5 so 7 ,24 25
-even: 8 /2 =  4 4 square 16 +_1 = 15 17 so 8 15 17"""
+odd : 7 squre 49 : 49/2 24.5 so 7,24, 25
+even: 8 /2 =  4 4 square 16 +- 1 = 15 17 so 8 15 17"""
 
 # Simple Solution
 # def is_triplet(arr, n):

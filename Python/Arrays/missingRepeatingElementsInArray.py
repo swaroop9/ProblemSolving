@@ -4,43 +4,34 @@
 """Approach:Find the repeating and missing elements using Maps"""
 
 
-def main():
-    arr = [4, 3, 6, 2, 1, 1,2]
-
+def findRepeatingAndMissingElement(arr):
     numberMap = {}
     maxElement = len(arr)
 
-    for i in arr:
-
-        if not i in numberMap:
-            numberMap[i] = True
-
+    for ele in arr:
+        if numberMap.get(ele):
+            print("Repeating = ", ele)
         else:
-            print("Repeating = ", i)
+            numberMap[ele] = True
 
     for i in range(1, maxElement + 1):
         if not i in numberMap:
             print("Missing = ", i)
 
-
-main()
+arr = [4, 3, 6, 2, 1, 1,2]
+findRepeatingAndMissingElement(arr)
 
 # Method 2 (Use Sorting)
 """Approach: Sort the input array. Traverse the array and check for missing and repeating."""
 
 
-def main():
-    arr = [4, 3, 6, 2, 1, 1]
-
+def findRepeatingAndMissingElement_2(arr):
     sortedArr = sorted(arr)
 
     for i in range(1, len(arr)):
-
-        if not i in sortedArr:
-            print('Missing', i)
-
         if sortedArr[i - 1] == sortedArr[i]:
             print("Repeated", i)
-
-
-main()
+        elif not i in sortedArr:
+            print('Missing', i)
+arr = [4, 3, 6, 2, 1, 1, 2]
+findRepeatingAndMissingElement_2(arr)
